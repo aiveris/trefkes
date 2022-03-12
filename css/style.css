@@ -10,38 +10,27 @@ body {
   font-family: "Titillium Web", sans-serif;
   font-size: large;
   background: rgb(219, 211, 211);
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
+  /* background-size: cover; */
+  /* background-position: center center; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* min-height: 100vh; */
 }
-.board {
-  width: 312px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #201d1c;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  background: rgb(192, 212, 229);
-  padding: 2px;
-}
-
 .btn {
   background: transparent;
-  width: 40px;
-  height: 22px;
+  /* width: 40px;
+  height: 22px; */
   border-radius: 10px;
   cursor: pointer;
   outline: none;
   transition: all 0.5s ease;
-  box-shadow: none;
-  right: 15px;
-  font-size: 0.9em;
+  /* box-shadow: none; */
+  /* right: 15px; */
+  font-size: 1em;
   font-weight: bold;
-  margin-left: 0;
-  margin-bottom: 0;
+  /* margin-left: 10px;
+  margin-bottom: 0; */
 }
 header {
   width: 100%;
@@ -51,11 +40,12 @@ header {
 }
 table {
   width: 90%;
-  margin: 2rem auto;
+  margin: 0.5rem auto;
   border-collapse: collapse;
 }
 table td {
   text-align: left;
+  font-weight: bold;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 0.3rem;
@@ -83,15 +73,12 @@ table th {
   height: 100%;
   left: 0;
   top: 0px;
-  padding-top: 20px;
-  background: #00000067;
-}
-.edit {
   padding-top: 50px;
   display: none;
+  background: #00000067;
 }
 .form {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .modal {
   position: relative;
@@ -104,8 +91,20 @@ table th {
   -moz-box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
   border-radius: 10px 10px 10px 10px;
+}
+.edit-modal {
   animation-name: animatetop;
   animation-duration: 0.4s;
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 .modal-show {
   display: block;
@@ -132,6 +131,9 @@ input {
 p {
   display: inline-block;
   margin-right: 70px;
+}
+i {
+  cursor: pointer;
 }
 h4 {
   display: inline-block;
