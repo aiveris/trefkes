@@ -10,27 +10,57 @@ body {
   font-family: "Titillium Web", sans-serif;
   font-size: large;
   background: rgb(219, 211, 211);
-  /* background-size: cover; */
-  /* background-position: center center; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
+  /* background-size: cover;
+  /* background-position: center center;
+  /* display: flex;
+  /* flex-direction: column;
+  /* align-items: center;
   /* min-height: 100vh; */
 }
 .btn {
   background: transparent;
-  /* width: 40px;
-  height: 22px; */
+  width: 40px;
+  height: 22px;
   border-radius: 10px;
   cursor: pointer;
   outline: none;
   transition: all 0.5s ease;
-  /* box-shadow: none; */
-  /* right: 15px; */
-  font-size: 1em;
+  box-shadow: none;
+  right: 15px;
+  font-size: 0.9em;
   font-weight: bold;
-  /* margin-left: 10px;
-  margin-bottom: 0; */
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+.btn-modal {
+  width: 55px;
+  height: 25px;
+  color: #457b9d;
+  border: 1px solid #457b9d;
+  margin-left: 20px;
+}
+.btn-modal:hover {
+  background: #457b9d;
+  color: #ffff;
+}
+.btn-edit {
+  color: #457b9d;
+  border: 1px solid #457b9d;
+  margin: 0;
+}
+.btn-edit:hover {
+  background: #457b9d;
+  color: #ffff;
+  border: 1px solid #457b9d;
+}
+.btn-delete {
+  color: red;
+  border: 1px solid red;
+  margin: 0;
+}
+.btn-delete:hover {
+  background: red;
+  color: #ffff;
 }
 header {
   width: 100%;
@@ -45,7 +75,6 @@ table {
 }
 table td {
   text-align: left;
-  font-weight: bold;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 0.3rem;
@@ -56,23 +85,13 @@ table th {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
-.btn-modal {
-  width: 55px;
-  height: 25px;
-  color: #457b9d;
-  border: 1px solid #457b9d;
-  margin-left: 20px;
-}
-.btn-modal:hover {
-  background: #457b9d;
-  color: #ffff;
-}
 .modal-wrapper {
   position: fixed;
   width: 100%;
   height: 100%;
   left: 0;
-  top: 0px;
+  top: 0;
+  bottom: 0;
   padding-top: 50px;
   display: none;
   background: #00000067;
@@ -86,6 +105,7 @@ table th {
   text-align: center;
   width: 312px;
   margin: 2rem auto;
+  /* padding-top: 1rem; */
   padding-bottom: 1rem;
   -webkit-box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);

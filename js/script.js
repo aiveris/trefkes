@@ -14,17 +14,9 @@ const renderTodoA1 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
-      <th>        
-        <i
-        class="fa fa-edit btn-edit"
-        onclick="close_modal()"
-        style="font-size: 24px"
-      ></i>
-        <i
-        class="fa fa-trash btn-delete"
-        onclick="close_modal()"
-        style="font-size: 24px"
-      ></i>
+      <th>
+      <button class="btn btn-edit">Edit</button>
+      <button class="btn btn-delete">Del</button>
       </th>
     </tr>
   `;
