@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Trefkė</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Krepšinis</h3>
+        <label>Užsiregistravo:</label>
+        <p id="countA1" class="count">0</p>
+      </div>
+      <table class="table-a1"></table>
+      <div class="add-todo-a1">
+        <form class="form" autocomplete="off">
+          <input
+            type="text"
+            name="todo"
+            placeholder="Įveskite vardą"
+            maxlength="20"
+            required="required"
+          />
+          <button class="btn btn-modal">OK</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="edit-modal modal-wrapper edit">
+      <div class="modal">
+        <div class="modal-header">
+          <!-- <h4>Koreguoti</h4> -->
+          <i
+            class="fa fa-close"
+            onclick="close_modal()"
+            style="font-size: 24px"
+          ></i>
+        </div>
+        <div class="modal-body">
+          <form class="form" autocomplete="off">
+            <input
+              type="text"
+              name="todo"
+              placeholder="Įveskite vardą"
+              maxlength="20"
+              required="required"
+            />
+            <button class="btn btn-modal">OK</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBRsZcfu7vZTJWJOQNYNB56OIBMU_tEiho",
+        authDomain: "trefke-f2b9b.firebaseapp.com",
+        projectId: "trefke-f2b9b",
+        storageBucket: "trefke-f2b9b.appspot.com",
+        messagingSenderId: "674663525663",
+        appId: "1:674663525663:web:0a011b75a74ba3671e142a",
+        measurementId: "G-6PVX0T6FK2",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
