@@ -31,7 +31,10 @@ const renderTodoA1 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a1").doc(`${doc.id}`).delete();
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a1").doc(`${doc.id}`).delete();
+    }
   });
 };
 // // Real time listener
