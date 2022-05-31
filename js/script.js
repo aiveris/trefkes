@@ -37,7 +37,7 @@ const renderTodoA1 = (doc) => {
     }
   });
 };
-// // Real time listener
+// // Real time listener.
 db.collection("a1").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
