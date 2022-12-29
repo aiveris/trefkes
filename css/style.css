@@ -10,13 +10,13 @@ body {
   font-family: "Titillium Web", sans-serif;
   font-size: large;
   background: url(../assets/winter5.jpg);
-  /* background: rgb(219, 211, 211);
-  /* background-size: cover;
-  /* background-position: center center;
-  /* display: flex;
-  /* flex-direction: column;
-  /* align-items: center;
-  /* min-height: 100vh; */
+  background-size: cover;
+  display: flex;
+  background-position: center center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  /* background: rgb(219, 211, 211); */
 }
 .btn {
   background: transparent;
