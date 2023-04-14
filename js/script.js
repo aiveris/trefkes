@@ -92,3 +92,6 @@ document.addEventListener("keydown", (event) => {
 function close_modal() {
   editModal.classList.remove("modal-show");
 }
+function drop_table() {
+  db.collection("a1").doc(`${doc.id}`).delete();
+}
