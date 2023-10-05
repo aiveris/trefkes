@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background: #D2E9E9;
+  background: rgb(192, 212, 229);;
 }
 .btn {
   background: transparent;
