@@ -114,10 +114,10 @@ table th {
 .edit-modal {
   animation-name: animatetop;
   animation-duration: 0.4s;
+  padding: 20rem;
 }
 @keyframes animatetop {
   from {
-    top: -300px;
     opacity: 0;
   }
   to {
